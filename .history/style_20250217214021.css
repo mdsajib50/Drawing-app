@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #4A98F7;
+}
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 1050px;
+    gap: 10px;
+    padding: 10px;
+}
+
+section{
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.drawing-board{
+    flex: 1;
+}
+canvas{
+    width: 700px;
+    height: 600px;
+    border: 2px solid brown;
+}
