@@ -1,0 +1,1 @@
+const drawing=document.getElementById
