@@ -121,10 +121,6 @@ section{
     border: 2px solid #fff;
     transform: translate(-50%, -50%);
 }
-
-.colors .option:first-child:hover::before{
-    border-color: #ccc;
-}
 .drawing-board{
     flex: 1;
 }

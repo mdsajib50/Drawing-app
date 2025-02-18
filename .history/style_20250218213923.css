@@ -91,7 +91,6 @@ section{
 
 .colors .option:nth-child(1){
     background: #fff;
-    border: 1px solid #bfbfbf;
 }
 .colors .option:nth-child(2){
     background: #000;
@@ -103,13 +102,13 @@ section{
     background: red;
 }
 .colors .option:nth-child(5){
-    background: green;
+    background: gr;
 }
-.colors .option:nth-child(6){
-    background: yellow;
+.colors .option:nth-child(1){
+    background: #fff;
 }
 
-.colors .option:hover:before{
+.colors .option::before{
     position: absolute;
     content: "";
     top: 50%;
@@ -120,10 +119,6 @@ section{
     border-radius: inherit;
     border: 2px solid #fff;
     transform: translate(-50%, -50%);
-}
-
-.colors .option:first-child:hover::before{
-    border-color: #ccc;
 }
 .drawing-board{
     flex: 1;

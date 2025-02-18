@@ -123,7 +123,7 @@ section{
 }
 
 .colors .option:first-child:hover::before{
-    border-color: #ccc;
+    
 }
 .drawing-board{
     flex: 1;

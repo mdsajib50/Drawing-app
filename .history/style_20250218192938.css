@@ -75,55 +75,13 @@ section{
 }
 
 .colors .options{
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
+    dif
 }
-
 .colors .option{
     width: 20px;
     height: 20px;
     background: red;
-    border-radius: 50%;
     margin-top: 5px;
-    position: relative;
-}
-
-.colors .option:nth-child(1){
-    background: #fff;
-    border: 1px solid #bfbfbf;
-}
-.colors .option:nth-child(2){
-    background: #000;
-}
-.colors .option:nth-child(3){
-    background: blue;
-}
-.colors .option:nth-child(4){
-    background: red;
-}
-.colors .option:nth-child(5){
-    background: green;
-}
-.colors .option:nth-child(6){
-    background: yellow;
-}
-
-.colors .option:hover:before{
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 12px;
-    height: 12px;
-    background: inherit;
-    border-radius: inherit;
-    border: 2px solid #fff;
-    transform: translate(-50%, -50%);
-}
-
-.colors .option:first-child:hover::before{
-    border-color: #ccc;
 }
 .drawing-board{
     flex: 1;
