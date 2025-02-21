@@ -97,19 +97,19 @@ section{
     background: #000;
 }
 .colors .option:nth-child(3){
-    background: #003092;
+    background: blue;
 }
 .colors .option:nth-child(4){
-    background: #B7B1F2;
+    background: red;
 }
 .colors .option:nth-child(5){
-    background: #E50046;
+    background: green;
 }
 .colors .option:nth-child(6){
-    background: #4A98F7;
+    background: yellow;
 }
 
-.colors .option.selected:before{
+.colors .option:selected:before{
     position: absolute;
     content: "";
     top: 50%;
@@ -122,13 +122,8 @@ section{
     transform: translate(-50%, -50%);
 }
 
-.colors .option:first-child.selected::before{
+.colors .option:first-child:selected::before{
     border-color: #ccc;
-}
-
-.option #color-picker{
-    opacity: 0;
-    cursor: pointer;
 }
 
 .buttons button{

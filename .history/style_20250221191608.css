@@ -97,13 +97,13 @@ section{
     background: #000;
 }
 .colors .option:nth-child(3){
-    background: #003092;
+    background: blue;
 }
 .colors .option:nth-child(4){
-    background: #B7B1F2;
+    background: red;
 }
 .colors .option:nth-child(5){
-    background: #E50046;
+    background: ;
 }
 .colors .option:nth-child(6){
     background: #4A98F7;
