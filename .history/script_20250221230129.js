@@ -1,6 +1,5 @@
 const canvas = document.getElementById('myCanvas');
-const toolBtn = document.querySelectorAll(".tool"),
-
+const toolBtn=document.querySelectorAll(.too)
 ctx = canvas.getContext("2d");
 
 let isDrawing = false,
@@ -22,14 +21,6 @@ const drawing = (e) => {
     ctx.lineTo(e.offsetX, e.offsetY);
     ctx.stroke();
 }
-
-toolBtn.forEach((btn) => {
-    btn.addEventListener("click", () => {
-        document.querySelector(".options .active").classList.remove("active");
-        btn.classList.add("active");
-        console.log(btn.id)
-    })
-})
 
 canvas.addEventListener("mousedown", startDraw);
 canvas.addEventListener("mousemove", drawing);

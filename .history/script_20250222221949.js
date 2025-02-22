@@ -26,7 +26,7 @@ const drawing = (e) => {
 toolBtn.forEach((btn) => {
     btn.addEventListener("click", () => {
         document.querySelector(".options .active").classList.remove("active");
-        btn.classList.add("active");
+        btn.c
         console.log(btn.id)
     })
 })

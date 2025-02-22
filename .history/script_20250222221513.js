@@ -1,5 +1,5 @@
 const canvas = document.getElementById('myCanvas');
-const toolBtn = document.querySelectorAll(".tool"),
+toolBtn = document.querySelectorAll(".tool"),
 
 ctx = canvas.getContext("2d");
 
@@ -25,8 +25,6 @@ const drawing = (e) => {
 
 toolBtn.forEach((btn) => {
     btn.addEventListener("click", () => {
-        document.querySelector(".options .active").classList.remove("active");
-        btn.classList.add("active");
         console.log(btn.id)
     })
 })
