@@ -16,16 +16,11 @@ let prevMouseX, prevMouseY, snapshot,
     selectedColor = "#000",
     brushWidth = 5;
 
-    const setCanvasBackground = () => {
-        ctx.fillStyle = "#fff";
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.fillStyle = selectedColor;
-    }
+    const set
 
 window.addEventListener("load", () => {
     canvas.width = canvas.offsetWidth;
     canvas.height = canvas.offsetHeight;
-    setCanvasBackground();
 });
 
 const drawRect = (e) => {
@@ -111,7 +106,6 @@ colorPicker.addEventListener("change", () => {
 
 clearCanvas.addEventListener("click", () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    setCanvasBackground();
 });
 
 saveImg.addEventListener("click", () => {

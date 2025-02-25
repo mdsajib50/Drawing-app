@@ -25,7 +25,6 @@ let prevMouseX, prevMouseY, snapshot,
 window.addEventListener("load", () => {
     canvas.width = canvas.offsetWidth;
     canvas.height = canvas.offsetHeight;
-    setCanvasBackground();
 });
 
 const drawRect = (e) => {
@@ -111,7 +110,6 @@ colorPicker.addEventListener("change", () => {
 
 clearCanvas.addEventListener("click", () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    setCanvasBackground();
 });
 
 saveImg.addEventListener("click", () => {
