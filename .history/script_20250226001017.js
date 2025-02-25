@@ -3,7 +3,7 @@ const toolBtn = document.querySelectorAll(".tool"),
     fillColor = document.getElementById("fill-color"),
     sizeSlider = document.getElementById("size-slider"),
     colorBtns = document.querySelectorAll(".colors .option"),
-    colorPicker = document.getElementById("color-picker");
+    c
 
 ctx = canvas.getContext("2d");
 
@@ -91,11 +91,6 @@ colorBtns.forEach((btn) => {
         btn.classList.add("selected");
         selectedColor =window.getComputedStyle(btn).getPropertyValue("background-color");
     });
-});
-
-colorPicker.addEventListener("change", () => {
-    colorPicker.parentElement.style.backgroundColor = colorPicker.value;
-    colorPicker.parentElement.click();
 });
 
 canvas.addEventListener("mousedown", startDraw);

@@ -2,15 +2,13 @@ const canvas = document.getElementById('myCanvas');
 const toolBtn = document.querySelectorAll(".tool"),
     fillColor = document.getElementById("fill-color"),
     sizeSlider = document.getElementById("size-slider"),
-    colorBtns = document.querySelectorAll(".colors .option"),
-    colorPicker = document.getElementById("color-picker");
+    
 
 ctx = canvas.getContext("2d");
 
 let prevMouseX, prevMouseY, snapshot,
     isDrawing = false,
     selectedTool = "brush",
-    selectedColor = "#000",
     brushWidth = 5;
 
 window.addEventListener("load", () => {
@@ -49,8 +47,6 @@ const startDraw = (e) => {
     prevMouseY = e.offsetY;
     ctx.beginPath();
     ctx.lineWidth = brushWidth;
-    ctx.strokeStyle = selectedColor;
-    ctx.fillStyle = selectedColor;
     snapshot = ctx.getImageData(0, 0, canvas.width, canvas.height);
 }
 
@@ -83,19 +79,6 @@ toolBtn.forEach((btn) => {
 sizeSlider.addEventListener("change", () => {
     brushWidth = sizeSlider.value; //passing the value of the slider to the brushWidth
 
-});
-
-colorBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-        document.querySelector(".options .selected").classList.remove("selected");
-        btn.classList.add("selected");
-        selectedColor =window.getComputedStyle(btn).getPropertyValue("background-color");
-    });
-});
-
-colorPicker.addEventListener("change", () => {
-    colorPicker.parentElement.style.backgroundColor = colorPicker.value;
-    colorPicker.parentElement.click();
 });
 
 canvas.addEventListener("mousedown", startDraw);

@@ -93,10 +93,7 @@ colorBtns.forEach((btn) => {
     });
 });
 
-colorPicker.addEventListener("change", () => {
-    colorPicker.parentElement.style.backgroundColor = colorPicker.value;
-    colorPicker.parentElement.click();
-});
+
 
 canvas.addEventListener("mousedown", startDraw);
 canvas.addEventListener("mousemove", drawing);
