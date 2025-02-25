@@ -75,10 +75,9 @@ toolBtn.forEach((btn) => {
     })
 });
 
-sizeSlider.addEventListener("change", () => {
-    brushWidth = sizeSlider.value; //passing the value of the slider to the brushWidth
-
-});
+sizeSlider.addEventListener("", () => {
+    brushWidth = sizeSlider.value;
+}
 
 canvas.addEventListener("mousedown", startDraw);
 canvas.addEventListener("mousemove", drawing);
