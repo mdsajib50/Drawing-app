@@ -30,14 +30,7 @@ const drawCircle = (e) => {
     !fillColor.checked ? ctx.stroke() : ctx.fill();
  }
 
-const drawTriangle = (e) => {
-    ctx.beginPath();
-    ctx.moveTo(prevMouseX, prevMouseY);
-    ctx.lineTo(e.offsetX, e.offsetY);
-    ctx.lineTo(prevMouseX - (e.offsetX - prevMouseX), e.offsetY);
-    ctx.closePath();
-    !fillColor.checked ? ctx.stroke() : ctx.fill();
-}
+ 
 
 const startDraw = (e) => {
     isDrawing = true;
