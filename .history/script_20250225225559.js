@@ -1,6 +1,6 @@
 const canvas = document.getElementById('myCanvas');
 const toolBtn = document.querySelectorAll(".tool"),
-    fillColor = document.getElementById("fill-color"),
+    fillColor = document.getElementById("fillColor"),
 
 ctx = canvas.getContext("2d");
 
@@ -19,8 +19,6 @@ const drawRect = (e) => {
         
         return ctx.strokeRect(e.offsetX, e.offsetY, prevMouseX - e.offsetX, prevMouseY - e.offsetY);
     }
-
-    ctx.fillRect(e.offsetX, e.offsetY, prevMouseX - e.offsetX, prevMouseY - e.offsetY);
 }
 
 const startDraw = (e) => {

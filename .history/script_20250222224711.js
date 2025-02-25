@@ -1,6 +1,5 @@
 const canvas = document.getElementById('myCanvas');
 const toolBtn = document.querySelectorAll(".tool"),
-    fillColor = document.getElementById("fill-color"),
 
 ctx = canvas.getContext("2d");
 
@@ -15,12 +14,7 @@ window.addEventListener("load", () => {
 });
 
 const drawRect = (e) => {
-    if (!fillColor.checked) {
-        
-        return ctx.strokeRect(e.offsetX, e.offsetY, prevMouseX - e.offsetX, prevMouseY - e.offsetY);
-    }
-
-    ctx.fillRect(e.offsetX, e.offsetY, prevMouseX - e.offsetX, prevMouseY - e.offsetY);
+    ctx.strokeRect(e.offsetX, e.offsetY, prevMouseX - e.offsetX, prevMouseY - e.offsetY);
 }
 
 const startDraw = (e) => {
@@ -29,12 +23,12 @@ const startDraw = (e) => {
     prevMouseY = e.offsetY;
     ctx.beginPath();
     ctx.lineWidth = brushWidth;
-    snapshot = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    s
 }
 
 const drawing = (e) => {
     if (!isDrawing) return;
-    ctx.putImageData(snapshot, 0, 0);
+
     if (selectedTool === "brush") {
         
         ctx.lineTo(e.offsetX, e.offsetY);
