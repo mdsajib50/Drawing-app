@@ -58,7 +58,6 @@ const drawing = (e) => {
     if (!isDrawing) return;
     ctx.putImageData(snapshot, 0, 0);
     if (selectedTool === "brush" || selectedTool === "eraser") {
-        ctx.strokeStyle = selectedTool === "eraser" ? "#fff" : selectedColor;
         
         ctx.lineTo(e.offsetX, e.offsetY);
         ctx.stroke();
